@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.2 (Python 3.8.6 on win32)" generated="20220204 19:13:58.791" rpa="false" schemaversion="2">
+<suite id="s1" name="TestCase" source="C:\Users\VidyashreeR\PycharmProjects\V1\TestCase">
+<suite id="s1-s1" name="CaptureScreenshot" source="C:\Users\VidyashreeR\PycharmProjects\V1\TestCase\CaptureScreenshot.robot">
+<test id="s1-s1-t1" name="CaptureScreenshot">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://trackingtest.exactrak.co.uk/</arg>
+<arg>Firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220204 19:13:59.162" level="INFO">Opening browser 'Firefox' to base url 'https://trackingtest.exactrak.co.uk/'.</msg>
+<msg timestamp="20220204 19:13:59.169" level="INFO">Firefox driver log is always forced to to: C:\Users\VidyashreeR\PycharmProjects\V1\Reports\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220204 19:13:59.162" endtime="20220204 19:14:09.281"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220204 19:14:09.282" endtime="20220204 19:14:09.285"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Login1_UserName</arg>
+<arg>cloudthingadmin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220204 19:14:09.286" level="INFO">Typing text 'cloudthingadmin' into text field 'id:Login1_UserName'.</msg>
+<status status="PASS" starttime="20220204 19:14:09.286" endtime="20220204 19:14:09.341"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Login1_Password</arg>
+<arg>cloudthingadmin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220204 19:14:09.342" level="INFO">Typing text 'cloudthingadmin' into text field 'id:Login1_Password'.</msg>
+<status status="PASS" starttime="20220204 19:14:09.342" endtime="20220204 19:14:09.366"/>
+</kw>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<arg>xpath://*[@id="login"]/header/a</arg>
+<arg>C:/Users/VidyashreeR/PycharmProjects/V1/exactraklogo.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<msg timestamp="20220204 19:14:09.382" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../exactraklogo.png"&gt;&lt;img src="../exactraklogo.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220204 19:14:09.367" endtime="20220204 19:14:09.382"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>C:/Users/VidyashreeR/PycharmProjects/V1/exactrakfullscreen.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220204 19:14:09.419" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../exactrakfullscreen.png"&gt;&lt;img src="../exactrakfullscreen.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220204 19:14:09.383" endtime="20220204 19:14:09.419"/>
+</kw>
+<tag>Regression</tag>
+<status status="PASS" starttime="20220204 19:13:59.161" endtime="20220204 19:14:09.420"/>
+</test>
+<status status="PASS" starttime="20220204 19:13:58.831" endtime="20220204 19:14:09.422"/>
+</suite>
+<suite id="s1-s2" name="Closebrowsers" source="C:\Users\VidyashreeR\PycharmProjects\V1\TestCase\closebrowsers.robot">
+<test id="s1-s2-t1" name="CloseBrowsers">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url1}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220204 19:14:09.431" level="INFO">Opening browser 'Firefox' to base url 'https://www.facebook.com/'.</msg>
+<msg timestamp="20220204 19:14:09.431" level="INFO">Firefox driver log is always forced to to: C:\Users\VidyashreeR\PycharmProjects\V1\Reports\geckodriver-2.log</msg>
+<status status="PASS" starttime="20220204 19:14:09.430" endtime="20220204 19:14:17.642"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220204 19:14:17.643" endtime="20220204 19:14:17.648"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url2}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220204 19:14:17.649" level="INFO">Opening browser 'Firefox' to base url 'https://www.instagram.com/'.</msg>
+<msg timestamp="20220204 19:14:17.650" level="INFO">Firefox driver log is always forced to to: C:\Users\VidyashreeR\PycharmProjects\V1\Reports\geckodriver-3.log</msg>
+<status status="PASS" starttime="20220204 19:14:17.648" endtime="20220204 19:14:26.435"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220204 19:14:26.437" endtime="20220204 19:14:26.446"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220204 19:14:26.448" endtime="20220204 19:14:29.400"/>
+</kw>
+<tag>Regression</tag>
+<status status="PASS" starttime="20220204 19:14:09.429" endtime="20220204 19:14:29.401"/>
+</test>
+<status status="PASS" starttime="20220204 19:14:09.423" endtime="20220204 19:14:29.403"/>
+</suite>
+<suite id="s1-s3" name="DropDowns" source="C:\Users\VidyashreeR\PycharmProjects\V1\TestCase\DropDowns.robot">
+<test id="s1-s3-t1" name="Testing Dropdowns and ListBoxs">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220204 19:14:29.411" level="INFO">Opening browser 'Firefox' to base url 'http://mmedev-teacher.devthing.org/#login'.</msg>
+<msg timestamp="20220204 19:14:29.412" level="INFO">Firefox driver log is always forced to to: C:\Users\VidyashreeR\PycharmProjects\V1\Reports\geckodriver-4.log</msg>
+<status status="PASS" starttime="20220204 19:14:29.411" endtime="20220204 19:14:38.822"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>60s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220204 19:14:38.823" endtime="20220204 19:14:38.826"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${email_txt}</var>
+<arg>id:username</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220204 19:14:38.827" level="INFO">${email_txt} = id:username</msg>
+<status status="PASS" starttime="20220204 19:14:38.826" endtime="20220204 19:14:38.827"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${password_txt}</var>
+<arg>id:password</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220204 19:14:38.828" level="INFO">${password_txt} = id:password</msg>
+<status status="PASS" starttime="20220204 19:14:38.828" endtime="20220204 19:14:38.828"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${login_button}</var>
+<arg>type:submit</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220204 19:14:38.829" level="INFO">${login_button} = type:submit</msg>
+<status status="PASS" starttime="20220204 19:14:38.829" endtime="20220204 19:14:38.829"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email_txt}</arg>
+<arg>nancy.teacher.dev@mailinator.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220204 19:14:38.830" level="INFO">Typing text 'nancy.teacher.dev@mailinator.com' into text field 'id:username'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220204 19:14:39.992" level="FAIL">InvalidSessionIdException: Message: Tried to run command without establishing a connection
+</msg>
+<status status="FAIL" starttime="20220204 19:14:39.938" endtime="20220204 19:14:39.992"/>
+</kw>
+<msg timestamp="20220204 19:14:39.992" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: InvalidSessionIdException: Message: Tried to run command without establishing a connection
+</msg>
+<msg timestamp="20220204 19:14:40.020" level="FAIL">WebDriverException: Message: Failed to decode response from marionette
+</msg>
+<status status="FAIL" starttime="20220204 19:14:38.830" endtime="20220204 19:14:40.020"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220204 19:14:40.020" endtime="20220204 19:14:40.020"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${password_txt}</arg>
+<arg>Password</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220204 19:14:40.021" endtime="20220204 19:14:40.021"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:.//*[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220204 19:14:40.021" endtime="20220204 19:14:40.021"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@class='dropdown-menu select-class-items']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220204 19:14:40.021" endtime="20220204 19:14:40.021"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>60s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" starttime="20220204 19:14:40.022" endtime="20220204 19:14:40.022"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>//*[@class='dropdown-menu select-class-items']</arg>
+<arg>abc</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" starttime="20220204 19:14:40.022" endtime="20220204 19:14:40.022"/>
+</kw>
+<tag>Regression</tag>
+<status status="FAIL" starttime="20220204 19:14:29.410" endtime="20220204 19:14:40.023">WebDriverException: Message: Failed to decode response from marionette
+</status>
+</test>
+<status status="FAIL" starttime="20220204 19:14:29.406" endtime="20220204 19:14:40.024"/>
+</suite>
+<suite id="s1-s4" name="Elementcontains" source="C:\Users\VidyashreeR\PycharmProjects\V1\TestCase\elementcontains.robot">
+<test id="s1-s4-t1" name="TabbedWindows">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url1}</arg>
+<arg>Firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220204 19:14:40.036" level="INFO">Opening browser 'Firefox' to base url 'http://mmesnt-teacher.devthing.org/#login'.</msg>
+<msg timestamp="20220204 19:14:40.037" level="INFO">Firefox driver log is always forced to to: C:\Users\VidyashreeR\PycharmProjects\V1\Reports\geckodriver-5.log</msg>
+<status status="PASS" starttime="20220204 19:14:40.035" endtime="20220204 19:14:49.523"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220204 19:14:49.524" endtime="20220204 19:14:49.528"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath://div[contains(@data-name, 'email')]/p</arg>
+<arg>To log in to MarvellousMe Teacher, please enter your email address and password.</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220204 19:14:50.207" level="INFO">Element 'xpath://div[contains(@data-name, 'email')]/p' contains text 'To log in to MarvellousMe Teacher, please enter your email address and password.'.</msg>
+<status status="PASS" starttime="20220204 19:14:49.528" endtime="20220204 19:14:50.207"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:username</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220204 19:14:50.208" level="FAIL">Keyword 'SeleniumLibrary.Input Text' expected 2 to 3 arguments, got 1.</msg>
+<status status="FAIL" starttime="20220204 19:14:50.208" endtime="20220204 19:14:50.208"/>
+</kw>
+<status status="FAIL" starttime="20220204 19:14:40.034" endtime="20220204 19:14:50.209">Keyword 'SeleniumLibrary.Input Text' expected 2 to 3 arguments, got 1.</status>
+</test>
+<status status="FAIL" starttime="20220204 19:14:40.030" endtime="20220204 19:14:50.212"/>
+</suite>
+<suite id="s1-s5" name="Fetchdatalist" source="C:\Users\VidyashreeR\PycharmProjects\V1\TestCase\Fetchdatalist.robot">
+<test id="s1-s5-t1" name="Fectching Data From List">
+<kw name="Create List" library="BuiltIn">
+<var>@{List1}</var>
+<arg>Hello</arg>
+<arg>22</arg>
+<arg>11.99</arg>
+<arg>World</arg>
+<arg>abcd1234</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20220204 19:14:50.231" level="INFO">@{List1} = [ Hello | 22 | 11.99 | World | abcd1234 ]</msg>
+<status status="PASS" starttime="20220204 19:14:50.231" endtime="20220204 19:14:50.232"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${list_length}</var>
+<arg>${List1}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20220204 19:14:50.232" level="INFO">Length is 5</msg>
+<msg timestamp="20220204 19:14:50.232" level="INFO">${list_length} = 5</msg>
+<status status="PASS" starttime="20220204 19:14:50.232" endtime="20220204 19:14:50.232"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${list_length}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220204 19:14:50.233" endtime="20220204 19:14:50.233"/>
+</kw>
+<kw name="Get From List" library="Collections">
+<var>${list_data}</var>
+<arg>${List1}</arg>
+<arg>4</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<msg timestamp="20220204 19:14:50.235" level="INFO">${list_data} = abcd1234</msg>
+<status status="PASS" starttime="20220204 19:14:50.234" endtime="20220204 19:14:50.235"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${list_data}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220204 19:14:50.235" endtime="20220204 19:14:50.236"/>
+</kw>
+<status status="PASS" starttime="20220204 19:14:50.229" endtime="20220204 19:14:50.236"/>
+</test>
+<status status="PASS" starttime="20220204 19:14:50.216" endtime="20220204 19:14:50.238"/>
+</suite>
+<suite id="s1-s6" name="Forloop" source="C:\Users\VidyashreeR\PycharmProjects\V1\TestCase\forloop.robot">
+<test id="s1-s6-t1" name="RunningLoopTest">
+<kw name="Create List" library="BuiltIn">
+<var>@{List1}</var>
+<arg>Hello</arg>
+<arg>22.22</arg>
+<arg>88</arg>
+<arg>World</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20220204 19:14:50.249" level="INFO">@{List1} = [ Hello | 22.22 | 88 | World ]</msg>
+<status status="PASS" starttime="20220204 19:14:50.249" endtime="20220204 19:14:50.249"/>
+</kw>
+<for flavor="IN">
+<var>${i}</var>
+<value>@{List1}</value>
+<iter>
+<var name="${i}">Hello</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220204 19:14:50.250" endtime="20220204 19:14:50.250"/>
+</kw>
+<status status="PASS" starttime="20220204 19:14:50.250" endtime="20220204 19:14:50.250"/>
+</iter>
+<iter>
+<var name="${i}">22.22</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220204 19:14:50.251" endtime="20220204 19:14:50.251"/>
+</kw>
+<status status="PASS" starttime="20220204 19:14:50.250" endtime="20220204 19:14:50.251"/>
+</iter>
+<iter>
+<var name="${i}">88</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220204 19:14:50.252" endtime="20220204 19:14:50.252"/>
+</kw>
+<status status="PASS" starttime="20220204 19:14:50.251" endtime="20220204 19:14:50.252"/>
+</iter>
+<iter>
+<var name="${i}">World</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220204 19:14:50.253" endtime="20220204 19:14:50.253"/>
+</kw>
+<status status="PASS" starttime="20220204 19:14:50.253" endtime="20220204 19:14:50.254"/>
+</iter>
+<status status="PASS" starttime="20220204 19:14:50.250" endtime="20220204 19:14:50.254"/>
+</for>
+<status status="PASS" starttime="20220204 19:14:50.247" endtime="20220204 19:14:50.254"/>
+</test>
+<status status="PASS" starttime="20220204 19:14:50.241" endtime="20220204 19:14:50.256"/>
+</suite>
+<suite id="s1-s7" name="Gettinglocation" source="C:\Users\VidyashreeR\PycharmProjects\V1\TestCase\gettinglocation.robot">
+<test id="s1-s7-t1" name="Tc_001 test">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url1}</arg>
+<arg>Firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220204 19:14:50.266" level="INFO">Opening browser 'Firefox' to base url 'https://trackingtest.exactrak.co.uk/'.</msg>
+<msg timestamp="20220204 19:14:50.268" level="INFO">Firefox driver log is always forced to to: C:\Users\VidyashreeR\PycharmProjects\V1\Reports\geckodriver-6.log</msg>
+<status status="PASS" starttime="20220204 19:14:50.266" endtime="20220204 19:15:00.307"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220204 19:15:00.308" endtime="20220204 19:15:00.315"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.instagram.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220204 19:15:00.317" level="INFO">Opening url 'https://www.instagram.com/'</msg>
+<status status="PASS" starttime="20220204 19:15:00.316" endtime="20220204 19:15:01.704"/>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${url2}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220204 19:15:01.716" level="INFO">${url2} = https://www.instagram.com/</msg>
+<status status="PASS" starttime="20220204 19:15:01.706" endtime="20220204 19:15:01.716"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${url2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220204 19:15:01.716" endtime="20220204 19:15:01.717"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20220204 19:15:01.717" endtime="20220204 19:15:01.889"/>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${url2}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220204 19:15:01.893" level="INFO">${url2} = https://trackingtest.exactrak.co.uk/Login.aspx?ReturnUrl=%2f</msg>
+<status status="PASS" starttime="20220204 19:15:01.890" endtime="20220204 19:15:01.893"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${url2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220204 19:15:01.893" endtime="20220204 19:15:01.894"/>
+</kw>
+<status status="PASS" starttime="20220204 19:14:50.264" endtime="20220204 19:15:01.895"/>
+</test>
+<status status="PASS" starttime="20220204 19:14:50.258" endtime="20220204 19:15:01.896"/>
+</suite>
+<suite id="s1-s8" name="InputTextBox" source="C:\Users\VidyashreeR\PycharmProjects\V1\TestCase\InputTextBox.robot">
+<test id="s1-s8-t1" name="TestingInputTextBox">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220204 19:15:01.910" level="INFO">Opening browser 'Chrome' to base url 'http://mmedev-teacher.devthing.org/#login'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220204 19:15:06.157" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220204 19:15:06.084" endtime="20220204 19:15:06.157"/>
+</kw>
+<msg timestamp="20220204 19:15:06.189" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 91
+Current browser version is 97.0.4692.99 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+</msg>
+<status status="FAIL" starttime="20220204 19:15:01.910" endtime="20220204 19:15:06.189"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>MME Teacher</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" starttime="20220204 19:15:06.190" endtime="20220204 19:15:06.190"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>60s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" starttime="20220204 19:15:06.191" endtime="20220204 19:15:06.191"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${email_txt}</var>
+<arg>id:username</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220204 19:15:06.192" endtime="20220204 19:15:06.192"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${email_txt}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220204 19:15:06.192" endtime="20220204 19:15:06.192"/>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<arg>${email_txt}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="NOT RUN" starttime="20220204 19:15:06.193" endtime="20220204 19:15:06.193"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email_txt}</arg>
+<arg>vidya@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220204 19:15:06.193" endtime="20220204 19:15:06.193"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220204 19:15:06.193" endtime="20220204 19:15:06.193"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${email_txt}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220204 19:15:06.193" endtime="20220204 19:15:06.194"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220204 19:15:06.194" endtime="20220204 19:15:06.194"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20220204 19:15:06.194" endtime="20220204 19:15:06.194"/>
+</kw>
+<status status="FAIL" starttime="20220204 19:15:01.909" endtime="20220204 19:15:06.195">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 91
+Current browser version is 97.0.4692.99 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+</status>
+</test>
+<status status="FAIL" starttime="20220204 19:15:01.900" endtime="20220204 19:15:06.196"/>
+</suite>
+<suite id="s1-s9" name="Javascriptscrolldown" source="C:\Users\VidyashreeR\PycharmProjects\V1\TestCase\javascriptscrolldown.robot">
+<test id="s1-s9-t1" name="Tc_001 test">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url1}</arg>
+<arg>Firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220204 19:15:06.205" level="INFO">Opening browser 'Firefox' to base url 'https://trackingtest.exactrak.co.uk/'.</msg>
+<msg timestamp="20220204 19:15:06.206" level="INFO">

@@ -1,0 +1,10 @@
+1645032698936	geckodriver	INFO	Listening on 127.0.0.1:59282
+1645032702028	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\VIDYAS~1\\AppData\\Local\\Temp\\rust_mozprofileokAc7o"
+1645032702604	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\VidyashreeR\\AppData\\Local\\Temp\\rust_mozprofileokAc7o\\search.json.mozlz4", (void 0)))
+1645032705565	Marionette	INFO	Listening on port 59291
+1645032705786	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://mmedev-teacher.devthing.org/js/app/config/teacher_desktop_init.min.js?vRelease-98483, line 99: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://mmedev-teacher.devthing.org/js/app/config/teacher_desktop_init.min.js?vRelease-98483, line 9: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://mmedev-teacher.devthing.org/js/app/config/teacher_desktop_init.min.js?vRelease-98483, line 9: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+1645033259870	Marionette	INFO	Stopped listening on port 59291

@@ -1,0 +1,7 @@
+1643982314102	geckodriver	INFO	Listening on 127.0.0.1:49292
+1643982317217	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\VIDYAS~1\\AppData\\Local\\Temp\\rust_mozprofileOqWfVn"
+1643982317600	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\VidyashreeR\\AppData\\Local\\Temp\\rust_mozprofileOqWfVn\\search.json.mozlz4", (void 0)))
+1643982320269	Marionette	INFO	Listening on port 49300
+1643982320422	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://trackingtest.exactrak.co.uk"

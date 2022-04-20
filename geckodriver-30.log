@@ -1,0 +1,15 @@
+1645170497876	geckodriver	INFO	Listening on 127.0.0.1:65447
+1645170500976	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\VIDYAS~1\\AppData\\Local\\Temp\\rust_mozprofile9q7OOJ"
+1645170501462	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\VidyashreeR\\AppData\\Local\\Temp\\rust_mozprofile9q7OOJ\\search.json.mozlz4", (void 0)))
+1645170504793	Marionette	INFO	Listening on port 65456
+1645170505255	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://mmedev-teacher.devthing.org/js/app/config/teacher_desktop_init.min.js?vRelease-98483, line 99: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://mmedev-teacher.devthing.org/js/app/config/teacher_desktop_init.min.js?vRelease-98483, line 9: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://mmedev-teacher.devthing.org/js/app/config/teacher_desktop_init.min.js?vRelease-98483, line 9: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://mmedev-teacher.devthing.org"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1645170944358	Marionette	INFO	Stopped listening on port 65456
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+

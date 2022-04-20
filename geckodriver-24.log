@@ -1,0 +1,11 @@
+1645083719142	geckodriver	INFO	Listening on 127.0.0.1:52668
+1645083722243	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\VIDYAS~1\\AppData\\Local\\Temp\\rust_mozprofileWMdNCD"
+1645083723212	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\VidyashreeR\\AppData\\Local\\Temp\\rust_mozprofileWMdNCD\\search.json.mozlz4", (void 0)))
+1645083726612	Marionette	INFO	Listening on port 52678
+1645083726655	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://mmedev-teacher.devthing.org/js/app/config/teacher_desktop_init.min.js?vRelease-98483, line 99: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://mmedev-teacher.devthing.org/js/app/config/teacher_desktop_init.min.js?vRelease-98483, line 9: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://mmedev-teacher.devthing.org/js/app/config/teacher_desktop_init.min.js?vRelease-98483, line 9: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1645083840229	Marionette	INFO	Stopped listening on port 52678

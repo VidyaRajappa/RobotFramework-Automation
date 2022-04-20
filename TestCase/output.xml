@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.2 (Python 3.8.6 on win32)" generated="20220226 12:38:30.064" rpa="false" schemaversion="2">
+<suite id="s1" name="T" source="C:\Users\VidyashreeR\PycharmProjects\V1\TestCase\t.robot">
+<test id="s1-t1" name="Testing Fetchtime">
+<kw name="Log To Console" library="BuiltIn">
+<arg>C:\\Users\\VidyashreeR\\PycharmProjects\\V1\\TestCase</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220226 12:38:30.373" endtime="20220226 12:38:30.374"/>
+</kw>
+<kw name="Create Folder" library="UserKeywords">
+<status status="PASS" starttime="20220226 12:38:30.375" endtime="20220226 12:38:30.375"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>Firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220226 12:38:30.376" level="INFO">Opening browser 'Firefox' to base url 'http://mmedev-teacher.devthing.org/#login'.</msg>
+<msg timestamp="20220226 12:38:30.385" level="INFO">Firefox driver log is always forced to to: C:\Users\VidyashreeR\PycharmProjects\V1\TestCase\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220226 12:38:30.376" endtime="20220226 12:38:39.960"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220226 12:38:39.961" endtime="20220226 12:38:39.964"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 12:38:49.975" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220226 12:38:39.965" endtime="20220226 12:38:49.976"/>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${ActualUrl}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220226 12:38:49.987" level="INFO">${ActualUrl} = http://mmedev-teacher.devthing.org/#login</msg>
+<status status="PASS" starttime="20220226 12:38:49.978" endtime="20220226 12:38:49.987"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${ActualUrl}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220226 12:38:49.990" level="INFO">http://mmedev-teacher.devthing.org/#login</msg>
+<status status="PASS" starttime="20220226 12:38:49.989" endtime="20220226 12:38:49.990"/>
+</kw>
+<kw name="Get Source" library="SeleniumLibrary">
+<var>${source}</var>
+<doc>Returns the entire HTML source of the current page or frame.</doc>
+<msg timestamp="20220226 12:38:50.012" level="INFO">${source} = &lt;html&gt;&lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta name="format-detection" content="telephone=no"&gt;
+
+        &lt;meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, mi...</msg>
+<status status="PASS" starttime="20220226 12:38:49.994" endtime="20220226 12:38:50.012"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${source}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220226 12:38:50.013" level="INFO">&lt;html&gt;&lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta name="format-detection" content="telephone=no"&gt;
+
+        &lt;meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi"&gt;
+
+        &lt;!--
+        &lt;meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" /&gt;
+        --&gt;
+
+        &lt;link rel="stylesheet" type="text/css" href="css/libs/bootstrap/css/bootstrap.css"&gt;
+        &lt;link rel="stylesheet" type="text/css" href="css/libs/bootstrap/css/bootstrap-theme.css"&gt;
+        &lt;link rel="stylesheet" type="text/css" href="css/libs/bootstrap/css/bootstrap-switch.css"&gt;
+        &lt;link href="css/libs/jquery-ui.min.css" rel="stylesheet" type="text/css"&gt;
+        &lt;link rel="stylesheet" type="text/css" href="css/core/main.css"&gt;
+        &lt;link rel="stylesheet" type="text/css" href="css/core/player.css"&gt;
+        &lt;link rel="stylesheet" type="text/css" href="css/theme/default.css"&gt;
+
+        &lt;link rel="stylesheet" type="text/css" href="css/libs/bootstrap/css/awesome-bootstrap-checkbox.css"&gt;
+        &lt;link rel="stylesheet" type="text/css" href="css/libs/bootstrap/css/font-awesome.css"&gt;
+        &lt;link rel="stylesheet" type="text/css" href="css/libs/bootstrap/css/build.css"&gt;
+
+        &lt;link href="css/libs/jquery.dataTables.min.css" rel="stylesheet"&gt;
+        &lt;link href="css/libs/pickadate-3.4.0/default.css" rel="stylesheet"&gt;
+        &lt;link href="css/libs/pickadate-3.4.0/default.date.css" rel="stylesheet"&gt;
+        &lt;link href="css/libs/mediaelement/mediaelementplayer.css" rel="stylesheet"&gt;
+        &lt;link href="css/libs/jcrop/jquery.Jcrop.min.css" rel="stylesheet"&gt;
+        &lt;link href="css/libs/dropzone.css" rel="stylesheet"&gt;
+
+        &lt;title&gt;MME Teacher&lt;/title&gt;
+
+    &lt;style type="text/css"&gt;/* wow modal CSS */
+.hide-without-important {
+	display: none;
+}
+#wow.modal {
+	overflow-y: auto;
+	/*
+	top: 50%;
+	margin-top: -220px;
+	*/
+}
+.modal-dialog {
+  width: 100%; /* make full screen */
+  height: 100%; /* make full screen */
+  padding: 0; /* make full screen */
+  margin: 0; /* make full screen */
+}
+#wow.modal .close {
+	background: #333;
+	color: #fff;
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	z-index: 9999;
+	height: 24px;
+	width: 29px;
+	opacity: 1;
+	font-size: 23px;
+	text-shadow: none;
+	padding-bottom: 28px;
+	border-radius: 40px;
+	outline: none;
+}
+#wow.modal .modal-content {
+  	height: 100%; /* make full screen */
+	border-radius: 0;
+	background: #20A067;
+	border: 0;
+}
+#wow.modal .modal-body {
+	padding: 0;
+	height: 100%;
+}
+
+/* wow - alert */
+#wow.modal .bell-container {
+
+}
+#wow.modal .bell {
+	height: 320px;
+	width: 100%;
+	margin: 0 auto;
+	background-image: url('../../../img/wow/bell.svg');
+	background-size: 80% 80%;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+#wow.modal .wow-replay {
+	background: #333;
+	color: #fff;
+	font-size: 12px;
+	padding: 3px 10px 4px 10px;
+	position: absolute;
+	right: 12px;
+	bottom: 12px;
+	font-weight: bold;
+	outline: 0;
+	border-radius: 30px;
+}
+#wow.modal .wow-continue {
+	background: #fff;
+	color: #333;
+	font-size: 12px;
+	padding: 3px 10px 4px 10px;
+	position: absolute;
+	right: 12px;
+	bottom: 12px;
+	font-weight: bold;
+	outline: 0;
+	border-radius: 30px;
+}
+#wow.modal .wow-main-title h3 {
+	color: #fff;
+	font-size: 42px;
+	text-align: center;
+	margin-top: 40px;
+	line-height: 50px;
+}
+
+/* wow - student display */
+.wow-details-container {
+	height: 100%;
+	margin: 0 auto;
+}
+.wow-details-container #carousel-wow {
+	height: 100%;
+	padding: 40px;
+}
+.wow-details-container .student-details {
+	width: 280px;
+	margin: 40px auto;
+	position: relative;
+}
+.wow-details-container .student-details .student-image {
+	overflow: hidden;
+	background: #000;
+	width: 280px;
+	height: 280px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 10px rgba(255,255,255,0.4);
+}
+.wow-details-container .student-details .wow-reason {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	border-radius: 50%;
+	box-shadow: 0 0 0 8px rgba(255,255,255,0.4);
+}
+.wow-reason .icon {
+	width: 80px;
+	height: 80px;
+	padding-top: 21%;
+}
+.wow-reason .icon img {
+	width: 100%;
+	padding: 2px;
+}
+.wow-title h3 {
+	color: #fff;
+	font-size: 42px;
+	text-align: center;
+	margin-top: 40px;
+	line-height: 50px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* animations */
+.animated {
+	-webkit-animation-duration: 1s;
+	   -moz-animation-duration: 1s;
+	     -o-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	   -moz-animation-fill-mode: both;
+	     -o-animation-fill-mode: both;
+	        animation-fill-mode: both;
+}
+
+/* tada - animation */
+@-webkit-keyframes tada {
+	0% {-webkit-transform: scale(1);}
+	10%, 20% {-webkit-transform: scale(0.9) rotate(-3deg);}
+	30%, 50%, 70%, 90% {-webkit-transform: scale(1.1) rotate(3deg);}
+	40%, 60%, 80% {-webkit-transform: scale(1.1) rotate(-3deg);}
+	100% {-webkit-transform: scale(1) rotate(0);}
+}
+@-moz-keyframes tada {
+	0% {-moz-transform: scale(1);}
+	10%, 20% {-moz-transform: scale(0.9) rotate(-3deg);}
+	30%, 50%, 70%, 90% {-moz-transform: scale(1.1) rotate(3deg);}
+	40%, 60%, 80% {-moz-transform: scale(1.1) rotate(-3deg);}
+	100% {-moz-transform: scale(1) rotate(0);}
+}
+@-o-keyframes tada {
+	0% {-o-transform: scale(1);}
+	10%, 20% {-o-transform: scale(0.9) rotate(-3deg);}
+	30%, 50%, 70%, 90% {-o-transform: scale(1.1) rotate(3deg);}
+	40%, 60%, 80% {-o-transform: scale(1.1) rotate(-3deg);}
+	100% {-o-transform: scale(1) rotate(0);}
+}
+@keyframes tada {
+	0% {transform: scale(1);}
+	10%, 20% {transform: scale(0.9) rotate(-3deg);}
+	30%, 50%, 70%, 90% {transform: scale(1.1) rotate(3deg);}
+	40%, 60%, 80% {transform: scale(1.1) rotate(-3deg);}
+	100% {transform: scale(1) rotate(0);}
+}
+.tada {
+	-webkit-animation-name: tada;
+	-moz-animation-name: tada;
+	-o-animation-name: tada;
+	animation-name: tada;
+}
+
+/* flipInX - animation */
+@-webkit-keyframes flipInX {
+    0% {
+        -webkit-transform: perspective(0) rotateX(0deg);
+        opacity: 0;
+    }
+    1% {
+        -webkit-transform: perspective(400px) rotateX(90deg);
+    }
+    60% {
+        -webkit-transform: perspective(400px) rotateX(-10deg);
+    }
+    70% {
+        -webkit-transform: perspective(400px) rotateX(10deg);
+    }
+    100% {
+        -webkit-transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+@-moz-keyframes flipInX {
+    0% {
+        -moz-transform: perspective(0) rotateX(0deg);
+        opacity: 0;
+    }
+	1% {
+        -moz-transform: perspective(400px) rotateX(90deg);
+    }
+    60% {
+        -moz-transform: perspective(400px) rotateX(-10deg);
+    }
+    70% {
+        -moz-transform: perspective(400px) rotateX(10deg);
+    }
+    100% {
+        -moz-transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+@-o-keyframes flipInX {
+    0% {
+        -o-transform: perspective(0px) rotateX(0deg);
+        opacity: 0;
+    }
+	1% {
+        -o-transform: perspective(400px) rotateX(90deg);
+    }
+    60% {
+        -o-transform: perspective(400px) rotateX(-10deg);
+    }
+    70% {
+        -o-transform: perspective(400px) rotateX(10deg);
+    }
+    100% {
+        -o-transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+@keyframes flipInX {
+    0% {
+        transform: perspective(0px) rotateX(0deg);
+        opacity: 0;
+    }
+	1% {
+        transform: perspective(400px) rotateX(90deg);
+    }
+    60% {
+        transform: perspective(400px) rotateX(-10deg);
+    }
+    70% {
+        transform: perspective(400px) rotateX(10deg);
+    }
+    100% {
+        transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+.flipInX {
+	-webkit-backface-visibility: visible !important;
+	-webkit-animation-name: flipInX;
+	-moz-backface-visibility: visible !important;
+	-moz-animation-name: flipInX;
+	-o-backface-visibility: visible !important;
+	-o-animation-name: flipInX;
+	backface-visibility: visible !important;
+	animation-name: flipInX;
+}
+
+/* fadeInRight animation */
+@-webkit-keyframes fadeInRightBig {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(0);
+	}
+	1% {
+		-webkit-transform: translateX(2000px);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(0);
+	}
+}
+@-moz-keyframes fadeInRightBig {
+	0% {
+		opacity: 0;
+		-moz-transform: translateX(0);
+	}
+	1% {
+		-moz-transform: translateX(2000px);
+	}
+	100% {
+		opacity: 1;
+		-moz-transform: translateX(0);
+	}
+}
+@-o-keyframes fadeInRightBig {
+	0% {
+		opacity: 0;
+		-o-transform: translateX(0);
+	}
+	1% {
+		-o-transform: translateX(2000px);
+	}
+	100% {
+		opacity: 1;
+		-o-transform: translateX(0);
+	}
+}
+@keyframes fadeInRightBig {
+	0% {
+		opacity: 0;
+		transform: translateX(0);
+	}
+	1% {
+		transform: translateX(2000px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.fadeInRightBig {
+	-webkit-animation-name: fadeInRightBig;
+	-moz-animation-name: fadeInRightBig;
+	-o-animation-name: fadeInRightBig;
+	animation-name: fadeInRightBig;
+}
+
+/* fadeOutLeftBig animation */
+@-webkit-keyframes fadeOutLeftBig {
+	0% {
+		opacity: 1;
+		-webkit-transform: translateX(0);
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: translateX(-2000px);
+	}
+}
+@-moz-keyframes fadeOutLeftBig {
+	0% {
+		opacity: 1;
+		-moz-transform: translateX(0);
+	}
+	100% {
+		opacity: 0;
+		-moz-transform: translateX(-2000px);
+	}
+}
+@-o-keyframes fadeOutLeftBig {
+	0% {
+		opacity: 1;
+		-o-transform: translateX(0);
+	}
+	100% {
+		opacity: 0;
+		-o-transform: translateX(-2000px);
+	}
+}
+@keyframes fadeOutLeftBig {
+	0% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	100% {
+		opacity: 0;
+		transform: translateX(-2000px);
+	}
+}
+.fadeOutLeftBig {
+	-webkit-animation-name: fadeOutLeftBig;
+	-moz-animation-name: fadeOutLeftBig;
+	-o-animation-name: fadeOutLeftBig;
+	animation-name: fadeOutLeftBig;
+}&lt;/style&gt;&lt;/head&gt;
+
+    &lt;body style="cursor: auto;"&gt;&lt;style&gt;
+html, body {
+    background: #fafafa;
+}
+&lt;/style&gt;
+&lt;div class="login"&gt;
+    &lt;div class="navigation hide"&gt;
+        &lt;div role="navigation" class="navbar navbar-default navbar-fixed-top login-navbar" style="min-height: 42px; border-bottom: 0;"&gt;
+            &lt;div class="container-fluid"&gt;
+                &lt;!-- MMe logo --&gt;
+                &lt;div class="navbar-header"&gt;
+                    &lt;div class="navbar-brand navbar-logo"&gt;
+                        &lt;div class="user-picture"&gt;
+                            &lt;!-- large logo --&gt;
+                            &lt;img class="large-logo" alt="Marvellous Me" src="img/release/logos/mme-large-logo.svg"&gt;
+                            &lt;!-- small logo
+                            &lt;img class="small-logo" alt="Marvellous Me" src="img/release/logos/mme-white.svg"&gt;
+                             --&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="wrapper"&gt;
+        &lt;table class="magic-table"&gt;
+            &lt;tbody&gt;&lt;tr&gt;
+                &lt;td&gt;
+                    &lt;div class="page"&gt;
+                        &lt;div class="gate"&gt;
+                          &lt;div class="gate-keeper"&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="row stretch no-scroll"&gt;
+                            &lt;!-- main --&gt;
+                            &lt;div class="signup column col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4" id="main"&gt;
+                                &lt;div class="row"&gt;
+                                    &lt;div class="col-md-12"&gt;
+                                        &lt;div class="signup-form-section"&gt;
+                                            &lt;div class="signup-content"&gt;
+                                                &lt;div class="section-title"&gt;
+                                                    &lt;h3&gt;Login&lt;/h3&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="form-content"&gt;&lt;form novalidate="true" autocomplete="Off" role="form" class="clearfix"&gt;&lt;div class="form-group" data-name="email"&gt;
+    &lt;p style="text-align:center;"&gt;To log in to MarvellousMe Teacher, please enter your email address and password.&lt;/p&gt;
+    &lt;!-- &lt;label for="username" class="control-label"&gt;Username (Email)&lt;/label&gt; --&gt;
+    &lt;input type="text" name="email" value="" placeholder="Email" id="username" class="form-control input-lg" autocorrect="off" autocapitalize="none"&gt;
+    &lt;span class="help-block"&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="form-group" data-name="password"&gt;
+    &lt;!-- &lt;label for="password" class="control-label"&gt;Password&lt;/label&gt; --&gt;
+    &lt;input type="password" name="password" value="" placeholder="Password" id="password" class="form-control input-lg"&gt;
+    &lt;span class="help-block"&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="form-group form-group-buttons clearfix"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-xs-6 col-sm-6 col-md-6"&gt;
+            &lt;a href="#lost-password" class="btn btn-default btn-block btn-lg btn-lost-password"&gt;Forgot?&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class="col-xs-6 col-sm-6 col-md-6"&gt;
+            &lt;!-- &lt;button class="test-btn-login ladda-button" data-style="expand-right"
+data-color="green"
+data-size="medium"
+data-spinner-size="40"
+data-spinner-color="#ff0000"&gt;&lt;span class="ladda-label"&gt;Crop&lt;/span&gt;&lt;/button&gt; --&gt;
+            &lt;button class="btn btn-success btn-block btn-lg pull-right" type="submit"&gt;Log in&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;p class="browser-info"&gt;PLEASE USE CHROME!&lt;/p&gt;
+   
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div class="login-form-footer"&gt;
+    &lt;p&gt;&lt;strong&gt;Not registered?&lt;/strong&gt; Ask your school office for details, or &lt;a class="contactUs" href="javascript:void(0)"&gt; contact us&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/form&gt;&lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class="row"&gt;
+                                    &lt;div class="col-md-12"&gt;
+                                        &lt;div class="login-footer"&gt;
+                                            &lt;div class="line-up"&gt;&lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;!-- /main --&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;&lt;/table&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="modal danger-modal" id="browser-error" data-keyboard="false" data-closable="true" data-backdrop="static"&gt;
+    &lt;!--&lt;div class="modal-dialog" style="width: 700px;"&gt;--&gt;
+    &lt;div class="modal-content"&gt;
+        &lt;div class="modal-header"&gt;
+            &lt;button type="button" class="close" data-dismiss="modal"&gt;&lt;span aria-hidden="true"&gt;×&lt;/span&gt;&lt;span class="sr-only"&gt;Close&lt;/span&gt;&lt;/button&gt;
+
+            &lt;h4 class="modal-title"&gt;Oops!&lt;/h4&gt;
+        &lt;/div&gt;
+        &lt;div class="modal-body"&gt;
+            &lt;p&gt;
+                It looks like you are using an internet browser that we don’t support. Please use one of our recommended browsers,
+                such as Chrome, Safari or Internet Explorer version 10 or 11.
+            &lt;/p&gt;
+
+        &lt;/div&gt;
+        &lt;div class="modal-footer"&gt;
+            &lt;button type="button" class="btn btn-default" data-dismiss="modal"&gt;Continue&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!--&lt;/div&gt;--&gt;
+&lt;/div&gt;
+&lt;div class="modal fade" id="SignUpError" role="dialog" style="width: 50%; left: 25%; top: 15%;"&gt;
+  &lt;div class="modal-dialog modal-sm danger-modal"&gt;
+      &lt;div class="modal-content"&gt;
+          &lt;div class="modal-header"&gt;
+          &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;×&lt;/button&gt;
+          &lt;h4 class="modal-title"&gt;Warning!&lt;/h4&gt;
+        &lt;/div&gt;
+        &lt;div class="modal-body"&gt;
+          The school that you are signing up to already uses Marvellous Me. To sign up to this school, please contact your School Administrator.
+          
+        &lt;/div&gt;
+        &lt;div class="modal-footer"&gt;
+          &lt;button type="button" class="btn btn-warning modal-cancel-btn pull-right" data-dismiss="modal" style="min-width:100px;"&gt;Cancel&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</msg>
+<status status="PASS" starttime="20220226 12:38:50.013" endtime="20220226 12:38:50.014"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${atr}</var>
+<arg>id:username</arg>
+<arg>class</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20220226 12:38:50.041" level="INFO">${atr} = form-control input-lg</msg>
+<status status="PASS" starttime="20220226 12:38:50.016" endtime="20220226 12:38:50.041"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${atr}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220226 12:38:50.042" level="INFO">form-control input-lg</msg>
+<status status="PASS" starttime="20220226 12:38:50.042" endtime="20220226 12:38:50.043"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${elecount}</var>
+<arg>class:form-control input-lg</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220226 12:38:50.050" level="INFO">${elecount} = 0</msg>
+<status status="PASS" starttime="20220226 12:38:50.044" endtime="20220226 12:38:50.050"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${elecount}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220226 12:38:50.051" level="INFO">0</msg>
+<status status="PASS" starttime="20220226 12:38:50.051" endtime="20220226 12:38:50.052"/>
+</kw>
+<status status="PASS" starttime="20220226 12:38:30.372" endtime="20220226 12:38:50.053"/>
+</test>
+<status status="PASS" starttime="20220226 12:38:30.065" endtime="20220226 12:38:50.056"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="T">T</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,15 @@
+1645711161817	geckodriver	INFO	Listening on 127.0.0.1:51668
+1645711164948	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\VIDYAS~1\\AppData\\Local\\Temp\\rust_mozprofileCsXyNP"
+1645711165711	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\VidyashreeR\\AppData\\Local\\Temp\\rust_mozprofileCsXyNP\\search.json.mozlz4", (void 0)))
+1645711169244	Marionette	INFO	Listening on port 51676
+1645711169364	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://mmedev-teacher.devthing.org/js/app/config/teacher_desktop_init.min.js?vRelease-98483, line 99: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://mmedev-teacher.devthing.org/js/app/config/teacher_desktop_init.min.js?vRelease-98483, line 9: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://mmedev-teacher.devthing.org/js/app/config/teacher_desktop_init.min.js?vRelease-98483, line 9: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1645712019765	Marionette	INFO	Stopped listening on port 51676
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1105: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\VidyashreeR\AppData\Local\Temp\rust_mozprofileCsXyNP\protections.sqlite
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
